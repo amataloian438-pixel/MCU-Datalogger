@@ -4581,7 +4581,7 @@
 		)
 		(uuid "f2399234-06b0-4ca6-91c1-ba2a4a2d25ef")
 	)
-	(label "DB"
+	(label "D8"
 		(at 207.01 43.18 180)
 		(effects
 			(font
@@ -7939,6 +7939,16 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+			)
+		)
+		(property "Purpose" ""
+			(at 222.25 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "21"
