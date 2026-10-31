@@ -3108,6 +3108,12 @@
 		(uuid "c274b75d-473d-4365-9273-b8e740858abf")
 	)
 	(junction
+		(at 256.54 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c62fae48-172e-4317-bf99-17a2a86b1241")
+	)
+	(junction
 		(at 95.25 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3227,7 +3233,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 35.56) (xy 261.62 35.56)
+			(xy 251.46 35.56) (xy 256.54 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3464,6 +3470,16 @@
 			(type default)
 		)
 		(uuid "47b80ee5-9690-43f9-a74f-5fd5dd19eddc")
+	)
+	(wire
+		(pts
+			(xy 256.54 35.56) (xy 261.62 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bd55d54-f315-4103-9ec2-af622ef1dff2")
 	)
 	(wire
 		(pts
@@ -5634,6 +5650,84 @@
 			(project "MCU Datalogger"
 				(path "/8bddb75b-83d6-4005-b3e1-b99eafcfc13b"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 256.54 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58212c4d-7e84-4360-9744-6374f5e9a5c6")
+		(property "Reference" "#FLG02"
+			(at 256.54 33.655 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 256.54 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm"
+			(at 256.54 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 256.54 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0035084c-3e6e-4a2e-af93-bbfc7f9c3992")
+		)
+		(instances
+			(project "MCU Datalogger"
+				(path "/8bddb75b-83d6-4005-b3e1-b99eafcfc13b"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
